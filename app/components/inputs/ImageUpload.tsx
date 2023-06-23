@@ -7,7 +7,7 @@ import { CldUploadWidget } from "next-cloudinary";
 import Image from "next/image";
 import { useCallback } from "react";
 import { TbPhotoPlus } from "react-icons/tb";
-import { useRouter } from "next/navigation";
+
 
 import useRentModal from "@/app/hooks/useRentModal";
 
@@ -28,7 +28,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
     value
 }) => {
     const rentModal = useRentModal();
-    const router = useRouter()
+    
 
     // for Uploading
     const handleUpload = useCallback((result: any) => {
@@ -52,7 +52,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
             // for cloudianry open error
             if(!open){
                 rentModal.onClose();
-                router.push('/customErrorPage');
+                throw new Error("Cloudinary load error. Just reload the page. ")
                 
             }
             return (
