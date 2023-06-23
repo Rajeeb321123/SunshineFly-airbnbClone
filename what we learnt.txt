@@ -1,0 +1,26 @@
+Client
+- react-icons 
+- zustand     : Alternative to reducer
+-query-string
+-world-countries
+-react-select
+-leaflet:mobile-friendly interactive maps.
+-npm i -D  @types/leaflet: types for leaflet
+-react-leaflet
+-date-fns
+-react-date-range
+-@types/react-date-range
+
+
+
+Server
+-prisma
+-nextAuth: credentials,google/github
+-@auth/prisma-adapter
+-@next-auth/prisma-adapter
+-bcrypt
+-@type/bcrypt
+
+
+TO DO after this project
+-learn getServerSideProps and getStaticProps for next.js
