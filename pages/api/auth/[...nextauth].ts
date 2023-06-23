@@ -4,7 +4,7 @@
 // pages folder is still not depreceatted in next 13 but it will in future
 
 import NextAuth ,{ AuthOptions} from 'next-auth';
-import { PrismaAdapter } from "@auth/prisma-adapter";
+import { PrismaAdapter } from "@next-auth/prisma-adapter"
 
 import prisma from '@/app/libs/prismadb';
 import GithubProvider from 'next-auth/providers/github';
